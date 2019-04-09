@@ -1,0 +1,170 @@
+body {
+    background-image: url(http://fyve.tntsj.com/images/8371-1.jpg);
+    background-attachment: fixed;
+    margin: 100px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+  
+  /* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+#resultImg {
+    margin: 0 auto;
+    height: 200px;
+    width: auto;
+}
+
+.modal-content img {
+    display: flex;
+    justify-content: center;
+}
+  
+  /* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+  
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+h1 {
+    background-color: rgb(255, 107, 107);
+    color: #fff;
+    padding: 16px;
+    font-size: 48px;
+    text-transform: uppercase;
+    width: 412px;
+}
+
+h2 {
+    background-color: rgb(39, 39, 39);
+    color: #fff;
+    padding: 16px;
+    font-size: 30px;
+    width: 433px;
+}
+
+.question-container {
+    background-color: #fff;
+    padding: 20px;
+}
+
+input[type=radio] {
+    display:none;
+}
+
+p {
+    font-size: 22px;
+    align-content: center;
+    margin: 0;
+}
+
+.img {
+    width: 260px;
+    height: 195px;
+    height:195px;
+}
+
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.calculation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.flex-container > div {
+    background-color: #f1f1f1;
+    margin: 10px;
+    font-size: 30px;
+}
+
+.answer label {
+    display: block;
+    padding: 4px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+.question-title {
+    font-size: 32px;
+    line-height: 1;
+    padding: 24px 0;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.option {
+    width: 260px;
+    height: 240px;
+    border: 1px solid rgb(99, 99, 99);
+    border-radius: 5px;
+    padding: 4px;
+    padding-bottom: 30px;
+}
+
+#finished-button {
+    background-color: rgb(255, 107, 107);
+    color: #fff;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    align-content: center;
+    margin-top: 20px;
+}
+
+.option:hover {
+    background-color: #333;
+    color: rgb(232, 232, 232);
+}
+
+label {padding-bottom:10px;}
+
+@media screen and (max-width: 550px) {
+    body { 
+        margin: 10%;
+    }
+
+    h1 {
+        font-size: 2em;
+        width: auto;
+    }
+
+    h2{
+        font-size: 1.5em;
+        width: auto;
+    }
+
+
+}
