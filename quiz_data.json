@@ -1,17 +1,17 @@
 {
     "title": "Take our quiz",
     "outcomes": {
-            "outcome1": {"img": "imgs/results/tricycle.jpeg", "text": "You are a... Tricycle. Try to break out of your shell and go an adventure!"},
-            "outcome2": {"img": "imgs/results/Kawasaki.jpeg", "text": "You are a... Kawasaki. You are extremely competitive, resourceful, and focused when you set your mind to something. You are a warrior who grinds until they succeed."},
-            "outcome3": {"img": "imgs/results/Ducati.jpg", "text": "You are a... Ducati. You drip style and radiate class. You enjoy the lavishes of life: the loud, the fast, the expensive. You live your life to the fullest!"},
-            "outcome4": {"img": "imgs/results/Yamaha.png", "text": "You are a... Yamaha. You are someone who always has a solution for everything life throws your way. Down to earth and okay with getting a little dirty, you thrive in any environment!"},
-            "outcome5": {"img": "imgs/results/Triumph.jpg", "text": "You are a... Triumph. You are the empitomy of Cool. You understand the subtlety of style and your authenticity is why other's look towards you to lead."},
-            "outcome6": {"img": "imgs/results/Harley-Davidson.webp", "text": "You are a... Harley-Davidson! You are All-American, iconic, and thrive in packs of like-minded bikers with a need for adventure. You're the Boss, never to turn away from controntation."}
+            "outcome1": {"img": "imgs/results/tricycle.jpeg", "text": "You are a... <strong>Tricycle</strong><br>Try to break out of your shell and go an adventure!"},
+            "outcome2": {"img": "imgs/results/Kawasaki.jpeg", "text": "You are a... <strong>Kawasaki</strong><br>You are extremely competitive, resourceful, and focused when you set your mind to something. You are a warrior who grinds until they succeed."},
+            "outcome3": {"img": "imgs/results/Ducati.jpg", "text": "You are a... <strong>Ducati</strong><br>You drip style and radiate class. You enjoy the lavishes of life: the loud, the fast, the expensive. You live your life to the fullest!"},
+            "outcome4": {"img": "imgs/results/Yamaha.png", "text": "You are a... <strong>Yamaha</strong><br>You are someone who always has a solution for everything life throws your way. Down to earth and okay with getting a little dirty, you thrive in any environment!"},
+            "outcome5": {"img": "imgs/results/Triumph.jpg", "text": "You are a... <strong>Triumph</strong><br>You are the empitomy of Cool. You understand the subtlety of style and your authenticity is why other's look towards you to lead."},
+            "outcome6": {"img": "imgs/results/Harley-Davidson.webp", "text": "You are a... <strong>Harley-Davidson</strong><br>You are All-American, iconic, and thrive in packs of like-minded bikers with a need for adventure. You're the Boss, never to turn away from controntation."}
     },
     "questions": [
         {
-            "question_name": "Choose A Sport",
-            "question_img_url": "imgs/light.jpg",
+            "question_name": "Choose A <span>Sport</span>",
+            "question_img_url": "imgs/question_background.jpg",
             "radio_name": "favorite_sport",
             "answers": [
                 {
@@ -25,7 +25,7 @@
                     "outcome": "0"
                 },
                 {
-                    "text": "The sport where you throw a ball but call it football",
+                    "text": "Where you use your hands but call it football",
                     "img_url": "imgs/sports/football.jpeg",
                     "outcome": "10"
                 },
@@ -47,8 +47,8 @@
             ]
         }, 
         {
-            "question_name": "Choose A Movie Theme",
-            "question_img_url": "imgs/light.jpg",
+            "question_name": "Choose A <span>Movie</span> Theme",
+            "question_img_url": "imgs/question_background.jpg",
             "radio_name": "favorite_movie",
             "answers": [
                 {
@@ -57,7 +57,7 @@
                     "outcome": "0"
                 },
                 {
-                    "text": "More triangles in RomComs than in hs geometry",
+                    "text": "More <3 triangles in romcoms than HS Geo.",
                     "img_url": "imgs/movies/romance.jpeg",
                     "outcome": "3"
                 },
@@ -84,8 +84,8 @@
             ]
         }, 
         {
-            "question_name": "Which Doggo Are You?",
-            "question_img_url": "imgs/light.jpg",
+            "question_name": "Which <span>Doggo</span> Are You?",
+            "question_img_url": "imgs/question_background.jpg",
             "radio_name": "favorite_vaca",
             "answers": [
                 {
@@ -110,18 +110,18 @@
                 },
                 {
                     "text": "City pupper",
-                    "img_url": "imgs/vacation/desert.png",
+                    "img_url": "imgs/vacation/city.png",
                     "outcome": "1"
                 },
                 {
                     "text": "One heckin BA doggo",
-                    "img_url": "imgs/vacation/desert.png",
+                    "img_url": "imgs/vacation/motorcycle.JPG",
                     "outcome": "10"
                 }
             ]
         }, 
         {
-            "question_name": "What Is Your Favorite Snack?",
+            "question_name": "What Is Your Favorite <span>Snack</span>?",
             "question_img_url": "imgs/light.jpg",
             "radio_name": "favorite_snack",
             "answers": [
@@ -158,8 +158,8 @@
             ]
         }, 
         {
-            "question_name": "Where Would You Rather Live?",
-            "question_img_url": "imgs/light.jpg",
+            "question_name": "Where Would You Rather <span>Live</span>?",
+            "question_img_url": "imgs/question_background.jpg",
             "radio_name": "favorite_home",
             "answers": [
                 {

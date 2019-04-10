@@ -5,11 +5,9 @@
 }
 
 body {
-    background-color: #000;
+    background-image: url(imgs/black\ background.jpg);
     background-attachment: fixed;
-    margin-right: 100px;
-    margin-left: 0px;
-
+    margin: 120px;
 }
 
 @media screen and (min-width: 1024px) {
@@ -52,6 +50,9 @@ body {
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
+    border-radius: 20px;
+    justify-content: center;
+    font-size: 2em;
     width: 80%;
 }
 
@@ -76,18 +77,21 @@ body {
   
 .close:hover,
 .close:focus {
-    color: #000;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     cursor: pointer;
+
 }
 
 h1 {
-    background-color: rgb(255, 107, 107);
-    color: #fff;
+    color: rgb(255, 255, 255);
     padding: 16px;
-    font-size: 48px;
-    text-transform: uppercase;
-    width: 412px;
+    margin-top: 400px;
+    font-size: 6em;
+}
+
+span {
+    color: rgb(255, 107, 107);
 }
 
 h2 {
@@ -95,12 +99,16 @@ h2 {
     color: #fff;
     padding: 16px;
     font-size: 30px;
-    width: 433px;
+    width: 487px;
 }
 
-.question-container {
+.question-card {
     background-color: #fff;
     padding: 20px;
+    border-radius: 20px;
+    padding: 60px;
+    margin-bottom: 80px;
+    padding-top:40px;
 }
 
 input[type=radio] {
@@ -120,7 +128,7 @@ h3 {
 .img {
     width: 260px;
     height: 195px;
-    height:195px;
+    height: 195px;
 }
 
 .flex-container {
@@ -134,11 +142,6 @@ h3 {
     display: flex;
     flex-direction: row;
     justify-content: center;
-}
-.flex-container > div {
-    background-color: #f1f1f1;
-    margin: 10px;
-    font-size: 30px;
 }
 
 .answer label {
@@ -154,42 +157,61 @@ h3 {
     padding: 24px 0;
     text-align: center;
     text-transform: capitalize;
-    background-image: url("imgs/light.jpg");
+    background-image: url("imgs/question_background.jpg");
+    border-radius: 10px;
+    
 }
 
 .option {
     width: 260px;
     height: 240px;
-    border: 1px solid rgb(99, 99, 99);
+    background-color: rgb(226, 226, 226);
     border-radius: 5px;
     padding: 4px;
     padding-bottom: 30px;
+    margin: 10px;
+    font-size: 30px;
 }
 
 #finished-button {
-    background-color: rgb(255, 107, 107);
-    color: #fff;
-    width: 200px;
-    height: 50px;
-    font-size: 20px;
+    color: rgb(255, 107, 107);
+    font-weight: bold;
+    background-color: rgb(15, 15, 15);
+    width: 500px;
+    height: 70px;
+    font-size: 2em;
     align-content: center;
     margin-top: 20px;
+    border: 5px solid rgb(255, 107, 107);
+    border-radius: 20px;
+    margin-bottom: 70px;
+}
+
+#finished-button:hover {
+    background-color: rgb(255, 107, 107);
+    color: #000;
+
 }
 
 .option:hover {
     background-color: #333;
     color: rgb(232, 232, 232);
+
+}
+
+.option:hover label p{
+    color: rgb(232, 232, 232);
 }
 
 label {padding-bottom:10px;}
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 660px) {
     body { 
         margin: 10%;
     }
 
     h1 {
-        font-size: 2em;
+        font-size: 4em;
         width: auto;
     }
 
