@@ -15,6 +15,8 @@ $("#finished-button").on('click', function(e) {
     var choices = $("input[type='radio']:checked").map(function(i, radio) {
         return $(radio).val();
       }).toArray();
+    
+    console.log(choices);
   
     var result = "CRASH: Please fill out all of the questions.";
     var img = "imgs/results/tricycle.jpeg";
@@ -76,3 +78,61 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+$.getJSON("quiz_data.json", function(data) {
+    for(var i = 0; i < data.questions.length; i++) {
+        document.getElementById("Q" + (i + 1)).innerHTML = questionTemplate(data.questions[i], (i + 1));
+    }
+    
+    // now you can do something with this data. 
+    // remember you can only work with the data in this callback
+    // data.title has the title
+    // maybe you want to loop through data.questions? 
+    //console.log(quiz_info);
+  });
+  function questionTemplate(data, i) { 
+  return `
+        <h3 class="question-title">${data.question_name}</h3>
+        <div class="flex-container" id="flex${i}">
+            <div class="option" id="op${i}1">
+                <label>
+                    <img class="img" src = "${data.answers[0].img_url}" />
+                    <input type="radio" name="${data.radio_name}" value="${data.answers[0].outcome}" onClick="changeColor('flex${i}', 'op${i}1')"/>
+                    <p>${data.answers[0].text}</p>
+                </label>
+            </div>
+            <div class="option" id="op${i}2">
+                <label>
+                    <img class="img" src = "${data.answers[1].img_url}" />
+                    <input type="radio" name="${data.radio_name}" value=${data.answers[1].outcome} onClick="changeColor('flex${i}', 'op${i}2')"/>
+                    <p>${data.answers[1].text}</p>
+                </label>
+            </div>
+            <div class="option" id="op${i}3">
+                <label>
+                    <img class="img" src = "${data.answers[2].img_url}" />
+                    <input type="radio" name="${data.radio_name}" value=${data.answers[2].outcome} onClick="changeColor('flex${i}', 'op${i}3')"/>
+                    <p>${data.answers[2].text}</p>
+                </label>
+            </div>
+            <div class="option" id="op${i}4">
+                <label>
+                    <img class="img" src = "${data.answers[3].img_url}" />
+                    <input type="radio" name="${data.radio_name}" value=${data.answers[3].outcome} onClick="changeColor('flex${i}', 'op${i}4')"/>
+                    <p>${data.answers[3].text}</p>
+                </label>
+            </div>
+            <div class="option" id="op${i}5">
+                <label>
+                    <img class="img" src ="${data.answers[4].img_url}"/>
+                    <input type="radio" name="${data.radio_name}" value=${data.answers[4].outcome} onClick="changeColor('flex${i}', 'op${i}5')"/>
+                    <p>${data.answers[4].text}</p>
+                </label>
+            </div>
+            <div class="option" id="op${i}6">
+                <label>
+                    <img class="img" src = "${data.answers[5].img_url}" />
+                    <input type="radio" name="${data.radio_name}" value=${data.answers[5].outcome} onClick="changeColor('flex${i}', 'op${i}6')"/>
+                    <p>${data.answers[5].text}</p>
+                </label>
+            </div>`; }
