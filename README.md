@@ -9,7 +9,20 @@ What didn't:
 - trying to JSON parse the outcomes into a modal (ran out of time to work on it further. Left it hardcoded)
 - tried to get snap scrolling to function
 
-## Images
+## CSS Hover Affects
 
+Results Button:
+![hover1](../master/ReadmePics/buttonHover1.png)
+![hover2](../master/ReadmePics/ButtonHover2.png)
+
+## JavaScript Hover/Select Affects
+
+Hovering and selecting a particular answer. 
+![hov](../master/ReadmePics/hover.png)
+![select](../master/ReadmePics/selection.png)
+
+## Mobile Compatible
+Scalable
+![scale](../master/ReadmePics/scalable.png)
 
 lab2-overlake333 created by GitHub Classroom
