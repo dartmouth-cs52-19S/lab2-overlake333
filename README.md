@@ -17,12 +17,13 @@ Results Button:
 
 ## JavaScript Hover/Select Affects
 
-Hovering and selecting a particular answer. 
+Selecting and hovering a particular answer: 
 ![hov](../master/ReadmePics/hover.png)
 ![select](../master/ReadmePics/selection.png)
 
 ## Mobile Compatible
-Scalable
+
+Scalable:
 ![scale](../master/ReadmePics/scalable.png)
 
 lab2-overlake333 created by GitHub Classroom
