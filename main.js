@@ -59,6 +59,7 @@ $("#finished-button").on('click', function(e) {
     modal.style.display = "block";  
   }); 
 
+  /* modal adapted from: https://www.w3schools.com/howto/howto_css_modals.asp*/ 
 var modal = document.getElementById('myModal');
 
 // Get the button that opens the modal
@@ -79,18 +80,16 @@ window.onclick = function(event) {
   }
 }
 
+// learding aobut template literals from: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals
 $.getJSON("quiz_data.json", function(data) {
     outcomes = data.outcome
     for(var i = 0; i < data.questions.length; i++) {
         document.getElementById("Q" + (i + 1)).innerHTML = questionTemplate(data.questions[i], (i + 1));
     }
     
-    // now you can do something with this data. 
-    // remember you can only work with the data in this callback
-    // data.title has the title
-    // maybe you want to loop through data.questions? 
-    //console.log(quiz_info);
   });
+
+  // learding aobut template literals from: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals
   function questionTemplate(data, i) { 
   return `
         <h3 class="question-title">${data.question_name}</h3>
