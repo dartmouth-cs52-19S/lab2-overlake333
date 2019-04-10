@@ -16,44 +16,44 @@ $("#finished-button").on('click', function(e) {
         return $(radio).val();
       }).toArray();
   
+    var result = "CRASH: Please fill out all of the questions.";
+    var img = "imgs/results/tricycle.jpeg";
   
-      if (choices.length == 5) {
-          var total = 0;
-          for(var i in choices) {
-              total += parseInt(choices[i]);
-          }
-
-          var result = "Tricycle";
-          var img = "imgs/results/tricycle.jpeg";
+    if(choices.length == 5) {
+        var total = 0;
+        for(var i in choices) {
+            total += parseInt(choices[i]);
+        }
   
-          if (total == 6) {
-              /*Tricycle*/
-              result = "You are a... Tricycle. Try to break out of your shell and go an adventure! ";
-          } else if (total < 15) {
-              /*Kawasaki*/ 
-              result = "You are a... Kawasaki. You are extremely competitive, resourceful, and focused when you set your mind to something. You are a warrior who grinds until they succeed.  ";
-              img = "imgs/results/tricycles.jpeg";
-          } else if (total < 25) {
-              /*Ducati*/
-              result = "You are a... Ducati. You drip style and radiate class. You enjoy the lavishes of life: the loud, the fast, the expensive. You live your life to the fullest!";
-                img = "imgs/results/Ducati.jpg"
-            } else if (total < 35) {
-              /*Yamaha*/
-              result = "You are a... Yamaha. You are someone who always has a solution for everything life throws your way. Down to earth and okay with getting a little dirty, you thrive in any environment!";
-                img = "imgs/results/Yamaha.png"
-            } else if (total < 45) {
-              /*Triumph*/
-              result = "You are a... Triumph. You are the empitomy of Cool. You understand the subtlety of style and your authenticity is why other's look towards you to lead. ";
-                img = "imgs/results/Triumph.jpg"
-            } else {
-              /*Harley*/
-              result = "You are a... Harley-Davidson! You are All-American, iconic, and thrive in packs of like-minded bikers with a need for adventure. You're the Boss, never to turn away from controntation. ";
-              img = "imgs/results/Harley-Davidson.webp";
-            }
-          console.log(result);
-          document.getElementById("resultImg").src = img;
-          document.getElementById("myModalLabel").innerHTML = result;
-      }
+        if (total == 6) {
+            /*Tricycle*/
+            result = "You are a... Tricycle. Try to break out of your shell and go an adventure! ";
+        } else if (total < 15) {
+            /*Kawasaki*/ 
+            result = "You are a... Kawasaki. You are extremely competitive, resourceful, and focused when you set your mind to something. You are a warrior who grinds until they succeed.  ";
+            img = "imgs/results/tricycles.jpeg";
+        } else if (total < 25) {
+            /*Ducati*/
+            result = "You are a... Ducati. You drip style and radiate class. You enjoy the lavishes of life: the loud, the fast, the expensive. You live your life to the fullest!";
+            img = "imgs/results/Ducati.jpg"
+        } else if (total < 35) {
+            /*Yamaha*/
+            result = "You are a... Yamaha. You are someone who always has a solution for everything life throws your way. Down to earth and okay with getting a little dirty, you thrive in any environment!";
+            img = "imgs/results/Yamaha.png"
+        } else if (total < 45) {
+            /*Triumph*/
+            result = "You are a... Triumph. You are the empitomy of Cool. You understand the subtlety of style and your authenticity is why other's look towards you to lead. ";
+            img = "imgs/results/Triumph.jpg"
+        } else {
+            /*Harley*/
+            result = "You are a... Harley-Davidson! You are All-American, iconic, and thrive in packs of like-minded bikers with a need for adventure. You're the Boss, never to turn away from controntation. ";
+            img = "imgs/results/Harley-Davidson.webp";
+        }
+        
+    } 
+    console.log(result);
+    document.getElementById("resultImg").src = img;
+    document.getElementById("myModalLabel").innerHTML = result;
     modal.style.display = "block";  
   }); 
 
