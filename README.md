@@ -24,6 +24,7 @@ Selecting and hovering a particular answer:
 ## Mobile Compatible
 
 Scalable:
+
 ![scale](../master/ReadmePics/scalable.png)
 
 lab2-overlake333 created by GitHub Classroom
